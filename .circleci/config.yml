@@ -1,0 +1,36 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:24.21.0
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: npm test
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: test-results
+          destination: test-results
+
+  build:
+    docker:
+      - image: cimg/node:24.21.0
+    steps:
+      - checkout
+      - run:
+          name: Build release notes
+          command: npm run build
+      - store_artifacts:
+          path: dist
+          destination: release-notes
+
+workflows:
+  test-and-build:
+    jobs:
+      # The jobs run in parallel so the red build still produces release
+      # notes to inspect. A real pipeline would make build require test.
+      - test
+      - build

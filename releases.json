@@ -1,0 +1,6 @@
+[
+  { "version": "1.2.0", "date": "2026-01-14", "notes": "Add CSV export." },
+  { "version": "1.9.0", "date": "2026-04-02", "notes": "Speed up report generation." },
+  { "version": "1.10.0", "date": "2026-06-18", "notes": "Add dark mode." },
+  { "version": "2.0.0", "date": "2026-09-01", "notes": "Introduce the plugin API." }
+]
