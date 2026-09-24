@@ -1,7 +1,7 @@
 {
   "name": "circleci-cli-getting-started",
   "version": "1.0.0",
-  "description": "Sample project for the CircleCI blog tutorial Getting Started With The CircleCI CLI",
+  "description": "Sample project for the CircleCI blog tutorial Getting started with the CircleCI CLI",
   "private": true,
   "type": "module",
   "engines": {

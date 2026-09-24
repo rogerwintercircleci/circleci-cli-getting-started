@@ -1,6 +1,6 @@
 # circleci-cli-getting-started
 
-Sample project for the CircleCI blog tutorial *Getting Started With The CircleCI CLI*.
+Sample project for the CircleCI blog tutorial *Getting started with the CircleCI CLI*.
 
 It's a tiny release-notes generator with one deliberate bug: it compares version numbers as strings, so `1.9.0` sorts above `1.10.0`. Two of its three tests fail on purpose, which gives the tutorial a red build to inspect with the [CircleCI CLI](https://cli.circleci.com/).
 
@@ -26,6 +26,6 @@ npm run build   # writes dist/RELEASE_NOTES.md
 
 ## Follow along
 
-Fork this repository, clone your fork, and follow the tutorial from there. Every command in it runs from inside the clone, where the CLI infers the project from the git remote.
+Fork this repository, clone the fork, and follow the tutorial from there. Every command in it runs from inside the clone, where the CLI infers the project from the git remote.
 
-Once you've seen the red build from every angle, fixing it is a good exercise: compare versions numerically, one dot-separated part at a time.
+Fixing the bug makes a good follow-up exercise: compare versions numerically, one dot-separated part at a time.
