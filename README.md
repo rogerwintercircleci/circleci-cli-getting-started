@@ -26,6 +26,6 @@ npm run build   # writes dist/RELEASE_NOTES.md
 
 ## Follow along
 
-Fork this repository, clone the fork, and follow the tutorial from there. Every command in it runs from inside the clone, where the CLI infers the project from the git remote.
+Fork this repository, clone the fork, and follow the tutorial from there. Every command in it runs from inside the clone, where the CLI works out the project from the repository.
 
 Fixing the bug makes a good follow-up exercise: compare versions numerically, one dot-separated part at a time.
